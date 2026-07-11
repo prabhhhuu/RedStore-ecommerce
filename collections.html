@@ -1,0 +1,296 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Collections | RedStore</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Funnel+Display:wght@300..800&family=Open+Sans:wght@500&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="./output.css" />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+
+
+
+    <!-- Header -->
+
+    <div id="header" class="bg-[radial-gradient(circle,_#fff,_#ffd6d6)]">
+      <div id="header-container" class="max-w-7xl mx-auto px-6">
+
+        <input type="checkbox" id="nav-toggle" class="peer hidden" />
+
+        <div id="navbar" class="flex items-center justify-between py-5">
+
+          <div id="logo-container">
+            <img id="logo" src="images/logo.png" alt="Logo" class="w-28 md:w-32" />
+          </div>
+
+          <nav id="nav-menu" class="hidden md:block">
+            <ul id="nav-links" class="flex items-center gap-8 text-gray-600">
+              <li>
+                <a href="index.html" id="home-link" class="hover:text-orange-500 transition">Home</a>
+              </li>
+              <li>
+                <a href="collections.html" id="products-link" class="text-orange-500 transition">Collections</a>
+              </li>
+              <li>
+                <a href="index.html#about" id="about-link" class="hover:text-orange-500 transition">About</a>
+              </li>
+              <li>
+                <a href="contact.html" id="contact-link" class="hover:text-orange-500 transition">Contact</a>
+              </li>
+              <li>
+                <a href="#" id="account-link" class="hover:text-orange-500 transition">Account</a>
+              </li>
+            </ul>
+          </nav>
+
+          <!-- Cart + Mobile Toggle -->
+
+          <div class="flex items-center gap-5">
+            <img id="cart-icon" src="images/cart.png" alt="Cart" class="w-8 h-8 cursor-pointer" />
+            <label for="nav-toggle" class="md:hidden cursor-pointer">
+              <img src="images/menu.png" alt="Menu" class="w-6 h-6" />
+            </label>
+          </div>
+        </div>
+
+        <!-- Mobile Menu -->
+
+        <nav id="mobile-nav" class="hidden peer-checked:flex md:hidden flex-col gap-4 pb-6 text-gray-600">
+          <a href="index.html" class="hover:text-orange-500 transition">Home</a>
+          <a href="collections.html" class="hover:text-orange-500 transition">Collections</a>
+          <a href="index.html#about" class="hover:text-orange-500 transition">About</a>
+          <a href="contact.html" class="hover:text-orange-500 transition">Contact</a>
+          <a href="#" class="hover:text-orange-500 transition">Account</a>
+        </nav>
+
+        <!-- Page Banner -->
+
+        <div id="page-banner" class="text-center py-16">
+          <h1 class="font-bold text-4xl text-gray-800 mb-3">Our Collection</h1>
+          <p class="text-gray-600 text-sm">
+            <a href="index.html" class="text-orange-500 hover:underline">Home</a> / Collections
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- shop by style -->
+
+    <div id="buy-container" class="mt-20 w-[90%] mx-auto">
+      <div id="buy-img-container" class="grid grid-cols-1 sm:grid-cols-3 gap-6 p-4">
+        <div id="buy-img" class="relative cursor-pointer">
+          <img
+            src="images/product-5.jpg"
+            alt="Sports Wear"
+            class="w-full rounded-lg hover:opacity-80 transition-all duration-300"
+          />
+          <span class="absolute bottom-4 left-4 bg-white text-gray-700 px-5 py-2 rounded-full text-sm font-medium">Sports</span>
+        </div>
+
+        <div id="buy-img" class="relative cursor-pointer">
+          <img
+            src="images/product-6.jpg"
+            alt="Casual Wear"
+            class="w-full rounded-lg hover:opacity-80 transition-all duration-300 "
+          />
+          <span class="absolute bottom-4 left-4 bg-white text-gray-700 px-5 py-2 rounded-full text-sm font-medium">Casual</span>
+        </div>
+
+        <div id="buy-img" class="relative cursor-pointer">
+          <img
+            src="images/product-11.jpg"
+            alt="Footwear"
+            class="w-full rounded-lg hover:opacity-80 transition-all duration-300"
+          />
+          <span class="absolute bottom-4 left-4 bg-white text-gray-700 px-5 py-2 rounded-full text-sm font-medium">Footwear</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- search -->
+
+    <div id="search-container" class="max-w-md mx-auto mt-14 px-4">
+      <input
+        type="text"
+        id="search-input"
+        placeholder="Search products..."
+        class="w-full border border-gray-300 rounded-full px-5 py-3 text-sm outline-none focus:border-orange-500 transition"
+      />
+    </div>
+
+    <!-- filters -->
+
+    <div id="filters" class="mt-6 flex items-center justify-center gap-3 flex-wrap">
+      <button data-category="all" class="filter-btn bg-[#ff523b] text-white px-6 py-2 rounded-full text-sm font-medium transition">All</button>
+      <button data-category="men" class="filter-btn text-gray-600 border border-gray-300 px-6 py-2 rounded-full text-sm hover:text-orange-500 hover:border-orange-500 transition">Men</button>
+      <button data-category="women" class="filter-btn text-gray-600 border border-gray-300 px-6 py-2 rounded-full text-sm hover:text-orange-500 hover:border-orange-500 transition">Women</button>
+      <button data-category="accessories" class="filter-btn text-gray-600 border border-gray-300 px-6 py-2 rounded-full text-sm hover:text-orange-500 hover:border-orange-500 transition">Accessories</button>
+    </div>
+
+    <!-- product grid -->
+
+    <div id="products-container" class="mt-14 w-[90%] mx-auto">
+      <p id="no-results" class="hidden text-center text-gray-500 py-10">
+        No products match your search.
+      </p>
+      <div id="products-row" class="grid grid-cols-2 md:grid-cols-4 gap-6 p-4">
+        <div id="ft-img" class="cursor-pointer product-card" data-category="men" data-name="Red Casual T Shirt">
+          <img src="images/product-1.jpg" alt="Red Casual T-Shirt" class="w-full rounded-lg shadow-md hover:-translate-y-2 hover:shadow-xl transition-all duration-300" />
+          <h4 class="mt-4 font-semibold text-lg">Red Casual T Shirt</h4>
+          <div class="text-orange-500 text-xl">★ ★ ★ ★ ★</div>
+          <p class="mt-2 font-semibold">$50.00</p>
+        </div>
+
+        <div id="ft-img" class="cursor-pointer product-card" data-category="men" data-name="Black Casual Shoe">
+          <img src="images/product-2.jpg" alt="Black Casual Shoe" class="w-full rounded-lg shadow-md hover:-translate-y-2 hover:shadow-xl transition-all duration-300" />
+          <h4 class="mt-4 font-semibold text-lg">Black Casual Shoe</h4>
+          <div class="text-orange-500 text-xl">★ ★ ★ ★ ☆</div>
+          <p class="mt-2 font-semibold">$60.00</p>
+        </div>
+
+        <div id="ft-img" class="cursor-pointer product-card" data-category="women" data-name="Gray Casual Jogger">
+          <img src="images/product-3.jpg" alt="Gray Casual Jogger" class="w-full rounded-lg shadow-md hover:-translate-y-2 hover:shadow-xl transition-all duration-300" />
+          <h4 class="mt-4 font-semibold text-lg">Gray Casual Jogger</h4>
+          <div class="text-orange-500 text-xl">★ ★ ★ ★ ★</div>
+          <p class="mt-2 font-semibold">$45.00</p>
+        </div>
+
+        <div id="ft-img" class="cursor-pointer product-card" data-category="women" data-name="Blue Casual T Shirt">
+          <img src="images/product-4.jpg" alt="Blue Casual T-Shirt" class="w-full rounded-lg shadow-md hover:-translate-y-2 hover:shadow-xl transition-all duration-300" />
+          <h4 class="mt-4 font-semibold text-lg">Blue Casual T Shirt</h4>
+          <div class="text-orange-500 text-xl">★ ★ ★ ★ ☆</div>
+          <p class="mt-2 font-semibold">$55.00</p>
+        </div>
+
+        <div id="ft-img" class="cursor-pointer product-card" data-category="men" data-name="Nike Air Sports">
+          <img src="images/product-5.jpg" alt="Nike Air Sports" class="w-full rounded-lg shadow-md hover:-translate-y-2 hover:shadow-xl transition-all duration-300" />
+          <h4 class="mt-4 font-semibold text-lg">Nike Air Sports</h4>
+          <div class="text-orange-500 text-xl">★ ★ ★ ★ ★</div>
+          <p class="mt-2 font-semibold">$50.00</p>
+        </div>
+
+        <div id="ft-img" class="cursor-pointer product-card" data-category="women" data-name="Black Casual T Shirt">
+          <img src="images/product-6.jpg" alt="Black Casual T Shirt" class="w-full rounded-lg shadow-md hover:-translate-y-2 hover:shadow-xl transition-all duration-300" />
+          <h4 class="mt-4 font-semibold text-lg">Black Casual T Shirt</h4>
+          <div class="text-orange-500 text-xl">★ ★ ★ ★ ☆</div>
+          <p class="mt-2 font-semibold">$60.00</p>
+        </div>
+
+        <div id="ft-img" class="cursor-pointer product-card" data-category="accessories" data-name="Sports Socks Pair HrX">
+          <img src="images/product-7.jpg" alt="Sports Socks Pair HrX" class="w-full rounded-lg shadow-md hover:-translate-y-2 hover:shadow-xl transition-all duration-300" />
+          <h4 class="mt-4 font-semibold text-lg">Sports Socks Pair HrX</h4>
+          <div class="text-orange-500 text-xl">★ ★ ★ ★ ★</div>
+          <p class="mt-2 font-semibold">$45.00</p>
+        </div>
+
+        <div id="ft-img" class="cursor-pointer product-card" data-category="accessories" data-name="Fossil Premium Dial Watch">
+          <img src="images/product-8.jpg" alt="Fossil Premium Dial Watch" class="w-full rounded-lg shadow-md hover:-translate-y-2 hover:shadow-xl transition-all duration-300" />
+          <h4 class="mt-4 font-semibold text-lg">Fossil Premium Dial Watch</h4>
+          <div class="text-orange-500 text-xl">★ ★ ★ ★ ☆</div>
+          <p class="mt-2 font-semibold">$55.00</p>
+        </div>
+
+        <div id="ft-img" class="cursor-pointer product-card" data-category="accessories" data-name="Premium Dial Watch">
+          <img src="images/product-9.jpg" alt="Premium Dial Watch" class="w-full rounded-lg shadow-md hover:-translate-y-2 hover:shadow-xl transition-all duration-300" />
+          <h4 class="mt-4 font-semibold text-lg">Premium Dial Watch</h4>
+          <div class="text-orange-500 text-xl">★ ★ ★ ★ ★</div>
+          <p class="mt-2 font-semibold">$50.00</p>
+        </div>
+
+        <div id="ft-img" class="cursor-pointer product-card" data-category="women" data-name="Black Casual Shoe">
+          <img src="images/product-10.jpg" alt="Black Casual Shoe" class="w-full rounded-lg shadow-md hover:-translate-y-2 hover:shadow-xl transition-all duration-300" />
+          <h4 class="mt-4 font-semibold text-lg">Black Casual Shoe</h4>
+          <div class="text-orange-500 text-xl">★ ★ ★ ★ ☆</div>
+          <p class="mt-2 font-semibold">$60.00</p>
+        </div>
+
+        <div id="ft-img" class="cursor-pointer product-card" data-category="men" data-name="Gray Casual Shoe">
+          <img src="images/product-11.jpg" alt="Gray Casual Shoe" class="w-full rounded-lg shadow-md hover:-translate-y-2 hover:shadow-xl transition-all duration-300" />
+          <h4 class="mt-4 font-semibold text-lg">Gray Casual Shoe</h4>
+          <div class="text-orange-500 text-xl">★ ★ ★ ★ ★</div>
+          <p class="mt-2 font-semibold">$45.00</p>
+        </div>
+
+        <div id="ft-img" class="cursor-pointer product-card" data-category="women" data-name="Black Casual Jogger">
+          <img src="images/product-12.jpg" alt="Black Casual Jogger" class="w-full rounded-lg shadow-md hover:-translate-y-2 hover:shadow-xl transition-all duration-300" />
+          <h4 class="mt-4 font-semibold text-lg">Black Casual Jogger</h4>
+          <div class="text-orange-500 text-xl">★ ★ ★ ★ ☆</div>
+          <p class="mt-2 font-semibold">$55.00</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+
+    <footer class="bg-[#0f0f0f] text-white pt-16 pb-6 mt-20">
+      <div class="px-6">
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
+
+          <!-- Download App -->
+          <div>
+            <h3 class="text-xl font-semibold mb-4">Download our App</h3>
+            <p class="text-gray-400 leading-7 mb-5">
+              Download App for Android and iOS mobile phone.
+            </p>
+            <div class="flex gap-3">
+              <img src="./images/play-store.png" alt="Play Store" class="w-34 cursor-pointer" />
+              <img src="./images/app-store.png" alt="App Store" class="w-34 cursor-pointer" />
+            </div>
+          </div>
+
+          <!-- Logo -->
+          <div class="text-center">
+            <img src="./images/logo-white.png" alt="RedStore" class="w-44 mx-auto" />
+            <p class="text-gray-400 mt-5 leading-7">
+              Our Purpose Is To Sustainably Make the Pleasure and
+              Benefits of Sports Accessible to the Many.
+            </p>
+          </div>
+
+          <!-- Useful Links -->
+          <div class="text-center">
+            <h3 class="text-xl font-semibold mb-4">Useful Links</h3>
+            <ul class="space-y-2 text-gray-400">
+              <li class="hover:text-white cursor-pointer transition">Coupons</li>
+              <li class="hover:text-white cursor-pointer transition">Blog Post</li>
+              <li class="hover:text-white cursor-pointer transition">Return Policy</li>
+              <li class="hover:text-white cursor-pointer transition">Join Affiliate</li>
+            </ul>
+          </div>
+
+          <!-- Follow Us -->
+          <div class="text-center">
+            <h3 class="text-xl font-semibold mb-4">Follow us</h3>
+            <ul class="space-y-2 text-gray-400">
+              <li class="hover:text-white cursor-pointer transition">Facebook</li>
+              <li class="hover:text-white cursor-pointer transition">Twitter</li>
+              <li class="hover:text-white cursor-pointer transition">Instagram</li>
+              <li class="hover:text-white cursor-pointer transition">YouTube</li>
+            </ul>
+          </div>
+
+        </div>
+
+        <hr class="border-gray-700 my-10">
+
+        <p class="text-center text-gray-400">
+          Copyright © 2026 - Prabhu Raja
+        </p>
+
+      </div>
+    </footer>
+    <script src="./script.js"></script>
+  </body>
+</html>
