@@ -225,9 +225,6 @@
   .my-24 {
     margin-block: calc(var(--spacing) * 24);
   }
-  .-mt-8 {
-    margin-top: calc(var(--spacing) * -8);
-  }
   .mt-1 {
     margin-top: var(--spacing);
   }
